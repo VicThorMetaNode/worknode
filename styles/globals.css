@@ -261,35 +261,16 @@ body {
   box-shadow: 5px 10px var(--color-peach);
 }
 
-.transform-container {
-margin-bottom: 10rem;
-padding: 2rem;
-box-shadow: var(--dark-shadow);
-}
+
 
 .sub-title {
   font-family: var(--font-kanit);
-  font-size: var(--font-size-42);
-  line-height: 0.55em;
-  font-weight: 100;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
 }
 
 .text-container {
   font-family: var(--font-jost);
-  font-size: var(--font-size-24);
-  color: var(--color-coconut);
-  font-weight: 100;
-  margin-top: 2rem;
 }
 
 .text-tips {
-  background-color: ;
   font-family: var(--font-spartan);
-  font-size: var(--font-size-20);
-  font-weight: 100;
-  box-shadow: 3px 1px var(--color-peach);
-  margin-right: 1rem;
-  margin-top: 3rem;
 }
