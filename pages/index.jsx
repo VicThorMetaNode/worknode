@@ -6,6 +6,9 @@ import Highlighter from "react-highlight-words";
 import NextLink from "next/link";
 import Image from "next/image";
 
+//import Framer Motion
+import { motion } from "framer-motion";
+
 // Import CHAKRA tools
 import {
   Center,
@@ -35,7 +38,7 @@ const BannerSM = ({ title, desc1, descLink, linkName }) => (
         className="sub-title"
         fontSize="3.5rem"
         fontWeight="100"
-        lineHeight={0.55}
+        lineHeight={0.6}
         pb={4}
         mb={4}
       >
@@ -60,10 +63,7 @@ const BannerSM = ({ title, desc1, descLink, linkName }) => (
         mt={3}
         boxShadow="3px 1px #FFD0B9"
       >
-        <Link href={linkName} textDecoration="none">
-          {descLink}
-        </Link>{" "}
-        <ArrowRightIcon w={2} h={2} />{" "}
+        <Link>{descLink}</Link> <ArrowRightIcon w={2} h={2} />{" "}
       </Text>
     </Box>
   </Flex>
@@ -76,7 +76,7 @@ const BannerML = ({ title, desc1, desc2, descLink, linkName }) => (
         className="sub-title"
         fontSize="3.5rem"
         fontWeight="100"
-        lineHeight={0.55}
+        lineHeight={0.6}
         pb={4}
         mb={4}
       >
@@ -135,7 +135,7 @@ const BannerList = ({
         className="sub-title"
         fontSize="3.5rem"
         fontWeight="100"
-        lineHeight={0.55}
+        lineHeight={0.6}
         pb={4}
         mb={4}
       >
@@ -218,8 +218,9 @@ export default function Home() {
       <Box>
         <BannerSM
           title="Transform the way you work"
-          desc1="A hands-on network approach that focuses on
-          unlocking the potential of your surrounding."
+          desc1="Enables people working from home to create safe work spaces, become
+          hosts, and drive networks to help reach professional development
+          goals. "
           descLink=" Create a space"
           linkName="/"
         />
@@ -228,9 +229,8 @@ export default function Home() {
       <Box>
         <BannerML
           title="Unleash your productivity"
-          desc1="Enables people working from home to create safe work spaces, become
-          hosts, and drive networks to help reach professional development
-          goals."
+          desc1="A hands-on network approach that focuses on
+          unlocking the potential of your surrounding."
           desc2="Flexible spaces that meet your needs. Whether you need
           a desk for hybrid or remote work, for teams of any size, or a new
           headquarters to develop your network."
@@ -244,9 +244,9 @@ export default function Home() {
           title="Prepare to become a host"
           desc1="Find tips to facilitate a working group session or find people to
           hold these positions:"
-          listBullet1="Leader."
+          listBullet1="Leader"
           listBullet2="Facilitator"
-          listBullet3="Ground Rules"
+          listBullet3="Ground Ruler"
           desc2=" ADJUST /Flexible spaces that meet your needs. Whether you need
           a desk for hybrid or remote work, for teams of any size, or a new
           headquarter to develop your network."
@@ -257,9 +257,8 @@ export default function Home() {
 
       <Box>
         <BannerSM
-          title=" Sharpen your hosting and networking skills"
-          desc1=" ADJUST /A hands-on network approach that focuses on
-          unlocking the potential of your surrounding."
+          title=" Sharpen your network skills"
+          desc1=" ADJUST /Find specific people with specific skills to strengthen your network."
           descLink=" Choose your path"
           linkName="/"
         />
