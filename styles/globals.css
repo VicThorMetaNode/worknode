@@ -94,7 +94,7 @@ VARIABLES
   --color-zilver: #A6A6A6;
   --color-gar-blue: #C8C8CD;
   --color-wolf: #D9D6CF;
-  --color:blue-violet: #766EC8;
+  --color-blue-violet: #766EC8;
   --color-lemon: #FFFF38;
   --color-canary: #FFFF99;
   --color-lemon-cream: #FDFF00;
@@ -256,11 +256,15 @@ body {
   line-height: 0.75em;
   font-weight: 600;
   margin-top: 4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   background-color: var(--color-daffodil);
   box-shadow: 5px 10px var(--color-peach);
 }
 
+.banner-title {
+
+  font-family: var(--font-roboto);
+}
 
 
 .sub-title {

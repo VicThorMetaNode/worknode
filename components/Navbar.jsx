@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import {
   Menu,
@@ -48,68 +49,75 @@ const Navbar = () => {
           <HamburgerIcon />
         </MenuButton>
         <MenuList ml="0.25rem" bg="#01051e">
-          <MenuItem
-            fontFamily="'Jost', sans-serif"
-            color="#FEFEFE"
-            onClick={() => alert("Kagebunshin")}
-            icon={<BsBox />}
-            _hover={{ color: "#01051e" }}
-          >
-            Home
-          </MenuItem>
-          <MenuItem
-            fontFamily="'Jost', sans-serif"
-            color="#FEFEFE"
-            onClick={() => alert("Kagebunshin")}
-            icon={<BsBoxArrowInDownRight />}
-            _hover={{ color: "#01051e" }}
-          >
-            Create
-          </MenuItem>
-          <MenuItem
-            fontFamily="'Jost', sans-serif"
-            color="#FEFEFE"
-            onClick={() => alert("Kagebunshin")}
-            icon={<BsBoxArrowInUpLeft />}
-            _hover={{ color: "#01051e" }}
-          >
-            Join
-          </MenuItem>
-          <MenuItem
-            fontFamily="'Jost', sans-serif"
-            color="#FEFEFE"
-            onClick={() => alert("Kagebunshin")}
-            icon={<BsReverseLayoutTextSidebarReverse />}
-            _hover={{ color: "#01051e" }}
-          >
-            Blog
-          </MenuItem>
-          <MenuItem
-            fontFamily="'Jost', sans-serif"
-            color="#FEFEFE"
-            onClick={() => alert("Kagebunshin")}
-            icon={<BsChatDots />}
-            _hover={{ color: "#01051e" }}
-          >
-            Chat
-          </MenuItem>
+          <Link href="/" passHref>
+            <MenuItem
+              fontFamily="'Jost', sans-serif"
+              color="#FEFEFE"
+              icon={<BsBox />}
+              _hover={{ color: "#01051e" }}
+            >
+              Home
+            </MenuItem>
+          </Link>
+          <Link href="/create" passHref>
+            <MenuItem
+              fontFamily="'Jost', sans-serif"
+              color="#FEFEFE"
+              icon={<BsBoxArrowInDownRight />}
+              _hover={{ color: "#01051e" }}
+            >
+              Create
+            </MenuItem>
+          </Link>
+          <Link href="/join" passHref>
+            <MenuItem
+              fontFamily="'Jost', sans-serif"
+              color="#FEFEFE"
+              icon={<BsBoxArrowInUpLeft />}
+              _hover={{ color: "#01051e" }}
+            >
+              Join
+            </MenuItem>
+          </Link>
+          <Link href="/blog" passHref>
+            <MenuItem
+              fontFamily="'Jost', sans-serif"
+              color="#FEFEFE"
+              icon={<BsReverseLayoutTextSidebarReverse />}
+              _hover={{ color: "#01051e" }}
+            >
+              Blog
+            </MenuItem>
+          </Link>
+          <Link href="/chat" passHref>
+            <MenuItem
+              fontFamily="'Jost', sans-serif"
+              color="#FEFEFE"
+              icon={<BsChatDots />}
+              _hover={{ color: "#01051e" }}
+            >
+              Chat
+            </MenuItem>
+          </Link>
           <MenuDivider />
-          <MenuItem
-            fontFamily="'Jost', sans-serif"
-            color="#FEFEFE"
-            onClick={() => alert("Kagebunshin")}
-            _hover={{ color: "#01051e" }}
-          >
-            Sign In
-          </MenuItem>
-          <MenuItem
-            fontFamily="'Jost', sans-serif"
-            color="#FEFEFE"
-            onClick={() => alert("Kagebunshin")}
-            _hover={{ color: "#01051e" }}
-          >
-            Sign Up
-          </MenuItem>
+          <Link href="/signin" passHref>
+            <MenuItem
+              fontFamily="'Jost', sans-serif"
+              color="#FEFEFE"
+              _hover={{ color: "#01051e" }}
+            >
+              Sign In
+            </MenuItem>
+          </Link>
+          <Link href="/signup" passHref>
+            <MenuItem
+              fontFamily="'Jost', sans-serif"
+              color="#FEFEFE"
+              _hover={{ color: "#01051e" }}
+            >
+              Sign Up
+            </MenuItem>
+          </Link>
         </MenuList>
       </Menu>
     </>
